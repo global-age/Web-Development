@@ -27,11 +27,26 @@
 // let myFunctionResult = printMyName('Babar');
 // console.log(myFunctionResult);
 
-function addTwoNumber(num1,num2) {
-    let result;
-    result = num1 + num2;
-    return result;
+// function addTwoNumber(num1,num2) {
+//     let result;
+//     result = num1 + num2;
+//     return result;
+// }
+
+// let addMyTwoNumberResult = addTwoNumber(8,11);
+// console.log(addMyTwoNumberResult);
+
+
+function checkNumber(inputNumber){
+    if(inputNumber%2 === 0){
+        return 'Even Number'
+    }else {
+        return 'Odd Number'
+    }
 }
 
-let addMyTwoNumberResult = addTwoNumber(2,11);
-console.log(addMyTwoNumberResult);
+
+
+let result = checkNumber(6);
+console.log(result);
+
