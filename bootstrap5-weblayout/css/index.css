@@ -1,0 +1,149 @@
+.hero-image{
+    background-image: url('../assets/hero-iamge.jpg');
+    height: 575px;
+    width: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* Adding Image to My Text */
+h1 {
+	text-transform: uppercase;
+	font-family: "Arial Black";
+	font-size: 164px;
+	background: url("../assets/hero-heading-image.jpg")
+		top;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    background-attachment: fixed;
+    background-size: cover;
+}
+/* Adding Image to My Text */
+
+/* Image-Heading */
+.image-heading{
+    text-transform: uppercase;
+	font-family: "Arial Black";
+	font-size: 80px;
+	background: url("../assets/image-heading.jpg")
+		top;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    background-attachment: fixed;
+    background-size: cover;
+}
+/* Image-Heading */
+
+/* image-cards css */
+.wrapper,
+.single-card-1{
+    height: 450px;
+    max-width: 300px;
+    margin: relative;
+}
+
+.wrapper,
+.single-card-2{
+    height: 450px;
+    max-width: 300px;
+    margin: relative;
+}
+
+.wrapper,
+.single-card-3{
+    height: 450px;
+    max-width: 300px;
+    margin: relative;
+}
+
+
+.wrapper{
+    perspective: 900px;
+}
+.single-card-1{
+    text-align: center;
+    transition: all 1.5s cubic-bezier(0.7, -.5, 0.3 ,1.8);
+    transform-style: preserve-3d;
+    background-image: url('../assets/hunza.jpg');
+    cursor: pointer;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.single-card-2{
+    text-align: center;
+    transition: all 1.5s cubic-bezier(0.7, -.5, 0.3 ,1.8);
+    transform-style: preserve-3d;
+    background-image: url('../assets/naltar.jpg');
+    cursor: pointer;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.single-card-3{
+    text-align: center;
+    transition: all 1.5s cubic-bezier(0.7, -.5, 0.3 ,1.8);
+    transform-style: preserve-3d;
+    background-image: url('../assets/dessai.jpg');
+    cursor: pointer;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.wrapper:hover .single-card-1{
+    transform: rotateY(180deg);
+}
+
+.wrapper:hover .single-card-2{
+    transform: rotateY(180deg);
+}
+
+.wrapper:hover .single-card-3{
+    transform: rotateY(180deg);
+}
+.front,.back{
+    width: 300px;
+    position: relative;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    
+}
+
+
+
+.back{
+    transform: rotateY(180deg);
+    position: absolute;
+    border-radius: 50px;
+    height: 450px;
+    background: #ffffff;
+}
+.content{
+    padding-top: 25%;
+}
+.content h2{
+    font-size: 35px;
+    margin: 0;
+    font-weight: 300;
+}
+.content h4{
+    margin: 0;
+}
+.socials{
+    margin-top: 20%;
+}
+.socials i{
+    font-size: 30px;
+    margin: 0 10px;
+}
+/* image-cards css */
